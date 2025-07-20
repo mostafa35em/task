@@ -1,0 +1,148 @@
+﻿/* products.css */
+
+/* Loader spinner */
+.loader {
+    border: 5px solid #222;
+    border-top: 5px solid #007BFF;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Products Table */
+#productsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1E1E2F;
+    color: #eee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    #productsTable thead tr {
+        background-color: #007BFF;
+        color: white;
+        text-align: left;
+    }
+
+    #productsTable th,
+    #productsTable td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #333;
+        vertical-align: middle;
+    }
+
+    #productsTable tbody tr:hover {
+        background-color: #222a44;
+    }
+
+/* Buttons */
+.button {
+    padding: 6px 14px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    color: white;
+    user-select: none;
+}
+
+.button-edit {
+    background-color: #00aaff;
+}
+
+    .button-edit:hover {
+        background-color: #0077cc;
+    }
+
+.button-delete {
+    background-color: #ff4d4d;
+}
+
+    .button-delete:hover {
+        background-color: #cc0000;
+    }
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #1E1E2F;
+    margin: auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 4px 25px rgba(0, 123, 255, 0.7);
+    text-align: center;
+    color: #eee;
+}
+
+    .modal-content h3 {
+        margin-bottom: 15px;
+        color: #ff4d4d;
+        font-weight: 700;
+    }
+
+    .modal-content p {
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+    }
+
+.modal-buttons button {
+    padding: 10px 22px;
+    margin: 0 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.confirm-btn {
+    background-color: #ff4d4d;
+}
+
+    .confirm-btn:hover {
+        background-color: #cc0000;
+    }
+
+.cancel-btn {
+    background-color: #007BFF;
+}
+
+    .cancel-btn:hover {
+        background-color: #0056b3;
+    }
